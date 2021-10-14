@@ -1,2 +1,17 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+
+<table class="table">
+  <tbody>
+    <tr>
+      <th scope="row">Number of products</th>
+      <td><%= @product_count %></td>
+    </tr>
+    <tr>
+      <th scope="row">Number of categories</th>
+      <td><%= @category_count %></td>
+    </tr>  
+  </tbody>
+</table>
+
+<div>
+  <%= link_to 'Products', admin_products_path %>
+</div>
